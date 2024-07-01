@@ -1,0 +1,26 @@
+---
+interface Props {
+  username: string;
+  role: string;
+  picture: string;
+  github: string;
+  description: string;
+}
+
+const { username, role, picture, github, description } = Astro.props;
+---
+
+<li class="link-card">
+  <a href={github}>
+    <img src={picture} alt={username} />
+    <h2>
+      {username}
+    </h2>
+    <h4>
+      {role}
+    </h4>
+    <p>
+      {description}
+    </p>
+  </a>
+</li>

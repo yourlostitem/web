@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Maker from "../components/Maker.astro";
+import Icon from "astro-icon";
+import "../styles/global.css";
+---
+
+<Layout title="Who makes Viridium?">
+  <main>
+    <h1>
+      Who makes <span class="text-gradient"
+        ><a href="/" class="link-underline">Viridium</a></span
+      >?
+    </h1>
+    <h2><a href="https://github.com/yourlostitem">We do.</a></h2>
+    <ul>
+    <Maker
+      username="werdl"
+      role="Backend developer"
+      picture="https://avatars.githubusercontent.com/u/116349156?v=4"
+      github="https://github.com/werdl"
+      description="Rust, C, V, Python, Linux, Arduino, Bash, Debian, electronics, webdev (occasionally)."
+    />
+    <Maker
+      username="uimaxbai"
+      role="Fullstack developer"
+      picture="https://avatars.githubusercontent.com/u/61615730?v=4"
+      github="https://github.com/uimaxbai"
+      description="Web developer (HTML, JS, CSS) who likes to do a bit of PHP and Python (and maybe C if I can be bothered)."
+    />
+    <Maker
+      username="thisiscoding1234"
+      role="Frontend developer"
+      picture="https://avatars.githubusercontent.com/u/106704354?s=400&u=db4289ba64d5a54cabbfd43d22fcdcf0b6c0f873&v=4"
+      github="https://github.com/thisiscoding1234"
+      description="Doing random things with design and programming."
+    />
+    </ul>
+  </main>
+</Layout>
