@@ -156,6 +156,15 @@ p {
     color: rgb(var(--accent-light));
 }
 
+.maker-card:is(:hover, :focus-within) {
+    background-position: 0;
+    background-image: var(--accent-gradient);
+}
+
+.maker-card:is(:hover, :focus-within) h2 {
+    color: rgb(var(--accent-light));
+}
+
 img {
     width: 100px;
     height: 100px;
