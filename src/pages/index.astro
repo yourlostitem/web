@@ -36,3 +36,9 @@ import '../styles/global.css'
     </ul>
   </main>
 </Layout>
+
+<script>
+	if (window.location.hostname.includes("yourlostitem.pages.dev")) {
+		window.location.href = `https://yourlostitem.okit.works${window.location.pathname}`;
+	}
+</script>
