@@ -2,17 +2,15 @@
 interface Props {
   username: string;
   role: string;
-  picture: string;
-  github: string;
   description: string;
 }
 
-const { username, role, picture, github, description } = Astro.props;
+const { username, role, description } = Astro.props;
 ---
 
 <li class="maker-card">
   <a href={github}>
-    <img src={picture} alt={username} />
+    <img src="https://github.com/{username}.png" alt={username} />
     <h2>
       {username}
     </h2>
